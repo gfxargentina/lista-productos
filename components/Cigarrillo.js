@@ -65,7 +65,6 @@ const Cigarrillo = ({
               </div>
               {/* BOTONES PRECIO X10 */}
               <div className="flex items-center gap-4 mt-4">
-                <h2 className="font-bold">x10</h2>
                 <div className="flex items-center gap-2">
                   <Button
                     onClick={eliminarCigarrillo}
