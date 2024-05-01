@@ -31,7 +31,7 @@ npm install
 ## Configuración
 
 1. Abre el archivo `pages/index.js`.
-2. Actualiza el número de teléfono en la variable `numeroTelefono` con el número al que se enviarán los mensajes de WhatsApp.
+2. Actualiza el número de teléfono en la variable .env copy con el número al que se enviarán los mensajes de WhatsApp.
 
 ## Ejecución
 
