@@ -213,7 +213,7 @@ export default function Home() {
     console.log(marcasCantidades);
 
     const mensajeWhatsApp = `${marcasCantidades}`;
-    const numeroTelefono = '+5493816631165';
+    const numeroTelefono = '+5493815230306';
     const linkWhatsApp = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(
       mensajeWhatsApp
     )}`;
