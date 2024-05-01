@@ -25,10 +25,11 @@ import Image from 'next/image';
 const Cigarrillo = ({
   marca,
   precio,
-
+  cantidadx10,
   cantidad,
   imagen,
   agregarCigarrillo,
+  agregarCigarrillox10,
   eliminarCigarrillo,
 }) => {
   return (
@@ -63,9 +64,10 @@ const Cigarrillo = ({
                   </span> */}
                 </div>
               </div>
-              {/* BOTONES PRECIO X10 */}
+
               <div className="flex items-center gap-4 mt-4">
                 <div className="flex items-center gap-2">
+                  <h2 className="font-bold">x1</h2>
                   <Button
                     onClick={eliminarCigarrillo}
                     className="p-1"
@@ -89,7 +91,27 @@ const Cigarrillo = ({
                   <span className="sr-only">Remove</span>
                 </Button> */}
               </div>
-              {/* BOTONES PRECIOS POR 1 */}
+
+              <div className="flex items-center gap-2">
+                <h2 className="font-bold">x10</h2>
+                <Button
+                  onClick={eliminarCigarrillo}
+                  className="p-1"
+                  size="icon"
+                  variant="outline"
+                >
+                  <MinusIcon className="w-4 h-4" />
+                </Button>
+                <span className="text-lg font-medium">{cantidadx10}</span>
+                <Button
+                  onClick={agregarCigarrillox10}
+                  className="p-1"
+                  size="icon"
+                  variant="outline"
+                >
+                  +10
+                </Button>
+              </div>
             </div>
           </div>
         </div>

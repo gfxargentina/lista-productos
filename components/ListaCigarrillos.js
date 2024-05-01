@@ -5,6 +5,7 @@ const ListaCigarrillos = ({
   cigarrillos,
 
   agregarCigarrillo,
+  agregarCigarrillox10 = { agregarCigarrillox10 },
   eliminarCigarrillo,
 }) => {
   return (
@@ -16,7 +17,9 @@ const ListaCigarrillos = ({
           precio={cigarrillo.precio}
           imagen={cigarrillo.imagen}
           cantidad={cigarrillo.cantidad}
+          cantidadx10={cigarrillo.cantidadx10}
           agregarCigarrillo={() => agregarCigarrillo(index)}
+          agregarCigarrillox10={() => agregarCigarrillox10(index)}
           eliminarCigarrillo={() => eliminarCigarrillo(index)}
         />
       ))}
