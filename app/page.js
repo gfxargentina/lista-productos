@@ -210,10 +210,9 @@ export default function Home() {
         return mensajeCigarrillo;
       })
       .join('\n');
-    console.log(marcasCantidades);
 
     const mensajeWhatsApp = `${marcasCantidades}`;
-    const numeroTelefono = '+5493815230306';
+    const numeroTelefono = process.env.NEXT_PUBLIC_PHONE_NUMBER;
     const linkWhatsApp = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(
       mensajeWhatsApp
     )}`;
