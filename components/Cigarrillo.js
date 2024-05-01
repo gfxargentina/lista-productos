@@ -65,9 +65,9 @@ const Cigarrillo = ({
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 mt-4">
+              <div className="flex items-center gap-4 mt-4 mb-5">
                 <div className="flex items-center gap-2">
-                  <h2 className="font-bold">x1</h2>
+                  <h2 className="font-bold mr-3">x1</h2>
                   <Button
                     onClick={eliminarCigarrillo}
                     className="p-1"
@@ -93,7 +93,7 @@ const Cigarrillo = ({
               </div>
 
               <div className="flex items-center gap-2">
-                <h2 className="font-bold">x10</h2>
+                <h2 className="font-bold text-red-700">x10</h2>
                 <Button
                   onClick={eliminarCigarrillo}
                   className="p-1"

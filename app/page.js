@@ -38,7 +38,7 @@ export default function Home() {
     {
       marca: 'Marlboro 10 fusion uva',
       precio: 1578.1,
-      imagen: '/marlboro-box.webp',
+      imagen: '/marlboro-10-uva.png',
       cantidad: 0,
       cantidadx10: 0,
     },
@@ -193,6 +193,34 @@ export default function Home() {
     setCigarrillos(nuevoCigarrillos);
   };
 
+  const enviarMensajeWhatsApp = () => {
+    const mensaje = `¡Hola! Estas son las marcas y cantidades de cigarrillos elegidas:\n\n`;
+    const marcasCantidades = cigarrillos
+      .filter(
+        (cigarrillo) => cigarrillo.cantidad > 0 || cigarrillo.cantidadx10 > 0
+      )
+      .map((cigarrillo) => {
+        let mensajeCigarrillo = '';
+        if (cigarrillo.cantidad > 0) {
+          mensajeCigarrillo += `${cigarrillo.cantidad}uni - ${cigarrillo.marca}\n`;
+        }
+        if (cigarrillo.cantidadx10 > 0) {
+          mensajeCigarrillo += `${cigarrillo.cantidadx10}uni - ${cigarrillo.marca}\n`;
+        }
+        return mensajeCigarrillo;
+      })
+      .join('\n');
+    console.log(marcasCantidades);
+
+    const mensajeWhatsApp = `${marcasCantidades}`;
+    const numeroTelefono = '+5493816631165';
+    const linkWhatsApp = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(
+      mensajeWhatsApp
+    )}`;
+
+    window.open(linkWhatsApp, '_blank');
+  };
+
   return (
     <div className="relative">
       <div className="fixed top-0 left-0 right-0 bg-white z-10 p-4 shadow-xl">
@@ -205,6 +233,12 @@ export default function Home() {
           </h2>
           <Button onClick={handleResetTotal} className="mt-5">
             Limpiar
+          </Button>
+          <Button
+            onClick={enviarMensajeWhatsApp}
+            className="ml-5 mt-5 bg-green-600"
+          >
+            enviar Whatsapp
           </Button>
         </div>
       </div>
