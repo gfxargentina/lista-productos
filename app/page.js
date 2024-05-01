@@ -211,7 +211,9 @@ export default function Home() {
       })
       .join('\n');
 
-    const mensajeWhatsApp = `${marcasCantidades}`;
+    const mensajeWhatsApp = `${marcasCantidades}\n\n$Total: ${calcularTotal().toFixed(
+      2
+    )}`;
     const numeroTelefono = process.env.NEXT_PUBLIC_PHONE_NUMBER;
     const linkWhatsApp = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(
       mensajeWhatsApp
