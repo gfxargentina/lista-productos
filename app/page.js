@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       marca: 'Marlboro 10 fusion uva',
-      precio: 1578.1,
+      precio: 1629,
       imagen: '/marlboro-10-uva.png',
       cantidad: 0,
       cantidadx10: 0,
