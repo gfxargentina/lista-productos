@@ -140,6 +140,34 @@ export default function Home() {
       cantidad: 0,
       cantidadx10: 0,
     },
+    {
+      marca: 'Milenio Comun 20',
+      precio: 1150,
+      imagen: '/MilenioRed.jpg',
+      cantidad: 0,
+      cantidadx10: 0,
+    },
+    {
+      marca: 'Milenio Menta 20',
+      precio: 1150,
+      imagen: '/milenio-menta.jpg',
+      cantidad: 0,
+      cantidadx10: 0,
+    },
+    {
+      marca: 'Kiel Comun 20',
+      precio: 890,
+      imagen: '/kiel.webp',
+      cantidad: 0,
+      cantidadx10: 0,
+    },
+    {
+      marca: 'Hills Click 20',
+      precio: 850,
+      imagen: '/Hills.jpg',
+      cantidad: 0,
+      cantidadx10: 0,
+    },
 
     // Agrega más cigarrillos aquí si lo deseas
   ]);
