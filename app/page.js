@@ -9,7 +9,7 @@ export default function Home() {
   const [cigarrillos, setCigarrillos] = useState([
     {
       marca: 'Marlboro 20 comun ks',
-      precio: 2616.6,
+      precio: 2617,
       imagen: '/marlboro-20-ks-comun.webp',
       cantidad: 0,
       cantidadx10: 0,
@@ -121,14 +121,14 @@ export default function Home() {
     },
     {
       marca: 'Lucky 10 convertible',
-      precio: 1341.26,
+      precio: 1554.65,
       imagen: '/lucky-10-convert.PNG',
       cantidad: 0,
       cantidadx10: 0,
     },
     {
       marca: 'Lucky 20 Box convertible',
-      precio: 2265.92,
+      precio: 2611.4,
       imagen: '/Lucky-20-box-conv.png',
       cantidad: 0,
       cantidadx10: 0,
