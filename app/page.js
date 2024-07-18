@@ -50,6 +50,13 @@ export default function Home() {
       cantidadx10: 0,
     },
     {
+      marca: 'Marlboro 20 crafted coral',
+      precio: 2334,
+      imagen: '/marlboro-craft-coral.jpg',
+      cantidad: 0,
+      cantidadx10: 0,
+    },
+    {
       marca: 'Philip Morris 20 ks',
       precio: 2700,
       imagen: '/philip-morris-20-ks.png',
@@ -120,6 +127,13 @@ export default function Home() {
       cantidadx10: 0,
     },
     {
+      marca: 'Chesterfield 20 uva',
+      precio: 2101,
+      imagen: '/chester-20-uva.webp',
+      cantidad: 0,
+      cantidadx10: 0,
+    },
+    {
       marca: 'Lucky 10 convertible',
       precio: 1697,
       imagen: '/lucky-10-convert.PNG',
@@ -137,6 +151,13 @@ export default function Home() {
       marca: 'Lucky 20 comun convertible',
       precio: 2439,
       imagen: '/lucky-convertible-ks.webp',
+      cantidad: 0,
+      cantidadx10: 0,
+    },
+    {
+      marca: 'Lucky 10 red mix',
+      precio: 1748,
+      imagen: '/lucky-10-red-mix.jpeg',
       cantidad: 0,
       cantidadx10: 0,
     },
@@ -163,7 +184,7 @@ export default function Home() {
     },
     {
       marca: 'Hills Click 20',
-      precio: 850,
+      precio: 1100,
       imagen: '/Hills.jpg',
       cantidad: 0,
       cantidadx10: 0,
